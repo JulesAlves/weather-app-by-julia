@@ -1,0 +1,90 @@
+body {
+  background: rgb(247, 241, 234);
+  font-family: "Bubbler One", sans-serif;
+}
+.gradient-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 0;
+  padding-bottom: 30px;
+  z-index: 99;
+  background: rgb(247, 170, 157);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 170, 157, 1) 0%,
+    rgba(247, 214, 165, 1) 25%,
+    rgba(133, 165, 155, 1) 50%,
+    rgba(126, 164, 180, 1) 75%,
+    rgba(54, 70, 100, 1) 100%
+  );
+}
+
+.container {
+  font-family: "Bubbler One", sans-serif;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #485d78;
+  background: rgb(247, 241, 234);
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.form {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  padding: 20px;
+}
+.btn-dark {
+  color: #485d78;
+  background-color: transparent;
+  border: 1px solid #485d78;
+  padding: 10px 20px;
+  display: block;
+  margin: 0 auto;
+}
+.current-city {
+  font-size: 50px;
+  text-align: center;
+  padding: 30px;
+  margin: 45px -20px;
+  border: solid;
+  color: rgb(247, 241, 234);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 170, 157, 1) 0%,
+    rgba(247, 214, 165, 1) 25%,
+    rgba(133, 165, 155, 1) 50%,
+    rgba(126, 164, 180, 1) 75%,
+    rgba(54, 70, 100, 1) 100%
+  );
+}
+.current-date,
+.weather-description {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 0px;
+}
+.current-temperature {
+  text-align: right;
+  font-size: 30px;
+  margin: 10px 10px;
+}
+#current-temperature {
+  text-align: center;
+  color: #485d78;
+  font-size: 50px;
+  padding: 5px 40px;
+}
+.weekly-forecast {
+  font-size: 20px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+}
+.weekly-forecast i {
+  font-size: 40px;
+  color: #485d78;
+  margin: 5px;
+}

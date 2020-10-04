@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c80cdaf017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App by Julia</title>
+  </head>
+  <body>
+    <div class="gradient-header"></div>
+    <div class="container" id="weather-app">
+      <form class="form-row" id="form">
+        <div class="col">
+          <input
+            type="search"
+            placeholder="search new city..."
+            id="city-input"
+            class="form-control form-control-lg"
+            autofocus="on"
+            autocomplete="off"
+          />
+        </div>
+        <div class="col">
+          <input
+            type="submit"
+            value="search"
+            type="button"
+            class="btn btn-dark btn-block"
+            id="search-button"
+          />
+        </div>
+        <div class="col">
+          <button
+            type="submit"
+            class="btn btn-dark btn-block"
+            id="current-city-button"
+          >
+          current
+          </button>
+        </div>
+      </form>
+      <div class="current-city" id="current-city"></div>
+      <div>
+        <div class="current-date" id="current-date"></div>
+      </br>
+        <div class="weather-description" id="weather-description"></div>
+    </br>
+      </div>
+      <div class="icon" id="icon"></div>
+      <div id="current-temperature">
+        <span id="current-icon">
+          <i class="fas fa-cloud-sun"></i>
+        </span>
+        <span class="temperature" id="temperature">°</span>
+        <span class="units">
+          <a id="celsius" >C</a> |
+          <a id="farenheit">F</a>
+        </span>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
